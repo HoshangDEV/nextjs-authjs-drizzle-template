@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-nextauth-drizzle-template",
+  "name": "nextjs-authjs-drizzle-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {

@@ -1,11 +1,11 @@
-# NextJS NextAuth Drizzle Template
+# NextJS Authjs Drizzle Template
 
-A modern, full-stack template featuring Next.js 15+, NextAuth v5, Drizzle ORM, and TypeScript.
+A modern, full-stack template featuring Next.js 15+, Authjs v5, Drizzle ORM, and TypeScript.
 
 ## Features
 
 - 🚀 [Next.js 15+](https://nextjs.org/) with App Router
-- 🔐 [NextAuth v5](https://next-auth.js.org/) for authentication
+- 🔐 [Authjs v5](https://next-auth.js.org/) for authentication
 - 🛢️ [Drizzle ORM](https://orm.drizzle.team/) for type-safe database operations
 - 🎨 [Tailwind CSS](https://tailwindcss.com/) for styling
 - 📝 [TypeScript](https://www.typescriptlang.org/) for type safety
@@ -23,8 +23,8 @@ A modern, full-stack template featuring Next.js 15+, NextAuth v5, Drizzle ORM, a
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/HoshangDEV/nextjs-nextauth-drizzle-template
-cd nextjs-nextauth-drizzle-template
+git clone https://github.com/HoshangDEV/nextjs-authjs-drizzle-template
+cd nextjs-authjs-drizzle-template
 ```
 
 2. Install dependencies:
@@ -73,7 +73,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Authentication
 
-This template uses NextAuth v5 with GitHub authentication out of the box. Additional providers can be added in `auth/config.ts`.
+This template uses Authjs v5 with GitHub authentication out of the box. Additional providers can be added in `auth/config.ts`.
 
 ## Database
 
@@ -95,7 +95,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - [Next.js](https://nextjs.org/)
-- [NextAuth.js](https://next-auth.js.org/)
+- [Authjs.js](https://next-auth.js.org/)
 - [Drizzle ORM](https://orm.drizzle.team/)
 - [Tailwind CSS](https://tailwindcss.com/)
 
