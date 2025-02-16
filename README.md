@@ -1,24 +1,103 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextJS NextAuth Drizzle Template
+
+A modern, full-stack template featuring Next.js 15+, NextAuth v5, Drizzle ORM, and TypeScript.
+
+## Features
+
+- 🚀 [Next.js 15+](https://nextjs.org/) with App Router
+- 🔐 [NextAuth v5](https://next-auth.js.org/) for authentication
+- 🛢️ [Drizzle ORM](https://orm.drizzle.team/) for type-safe database operations
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) for styling
+- 📝 [TypeScript](https://www.typescriptlang.org/) for type safety
+- 🔍 ESLint configured for Next.js
+- ⚡ Turbopack enabled for faster development
+
+## Prerequisites
+
+- Node.js 18+ 
+- PostgreSQL database
+- GitHub OAuth credentials (for authentication)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/HoshangDEV/nextjs-nextauth-drizzle-template
+cd nextjs-nextauth-drizzle-template
+```
+
+2. Install dependencies:
+
+```bash
+bun install
+```
+
+3. Set up your environment variables:
+
+    Fill in your `.env` file with the following:
+
+```bash
+DATABASE_URL="postgresql://user:password@localhost:5432/dbname"
+GITHUB_ID="your-github-client-id"
+GITHUB_SECRET="your-github-client-secret"
+AUTH_SECRET="your-auth-secret"
+```
+
+4. Initialize the database:
+
+```bash
+bun drizzle-kit generate
+bun drizzle-kit push
+```
+
+5. Start the development server:
+
+```bash
+bun run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/                   # Next.js app directory
+├── auth/                  # Authentication configuration
+├── components/           # React components
+├── drizzle/              # Database schema and configuration
+│   ├── schema.ts        # Database schema
+│   └── index.ts         # Database connection
+└── public/              # Static assets
+```
+
+## Authentication
+
+This template uses NextAuth v5 with GitHub authentication out of the box. Additional providers can be added in `auth/config.ts`.
+
+## Database
+
+The template uses Drizzle ORM with PostgreSQL. The schema is defined in `drizzle/schema.ts` and includes tables for:
+- Users
+- Accounts
+- Sessions
+- Verification tokens
+- Authenticators (for WebAuthn)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [NextAuth.js](https://next-auth.js.org/)
+- [Drizzle ORM](https://orm.drizzle.team/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Learn More
 
