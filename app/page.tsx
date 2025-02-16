@@ -5,7 +5,7 @@ export default async function Home() {
 
   if (session) {
     return (
-      <div className="flex flex-col items-center justify-center h-screen">
+      <div className="flex flex-col items-center justify-center h-screen gap-4">
         <p>Signed in as {session.user?.email}</p>
         <Signout />
       </div>

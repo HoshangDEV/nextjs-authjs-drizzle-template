@@ -7,7 +7,11 @@ export function SignIn() {
         "use server";
         await signIn("github");
       }}>
-      <button type="submit">Signin with GitHub</button>
+      <button
+        type="submit"
+        className="bg-blue-500 text-white px-4 py-2 rounded-md">
+        Signin with GitHub
+      </button>
     </form>
   );
 }
@@ -21,7 +25,11 @@ export async function Signout() {
           "use server";
           await signOut();
         }}>
-        <button type="submit">Signout</button>
+        <button
+          type="submit"
+          className="bg-red-500 text-white px-4 py-2 rounded-md">
+          Signout
+        </button>
       </form>
     );
   }
